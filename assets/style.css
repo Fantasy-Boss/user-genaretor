@@ -99,7 +99,7 @@ h5 {
 }
 
 .load div {
-    position:relative ;
+    position: relative ;
     width: 80px;
     height: 80px;
     border:7px solid;
@@ -277,6 +277,9 @@ span {
 
     h5 {
         font-size: larger;
+    }
+    .btn-my {
+        font-size: large;
     }
 }
 

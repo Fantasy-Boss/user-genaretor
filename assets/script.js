@@ -147,6 +147,7 @@ function parse(data) {
     
     $('.box').slideDown(2000);
     $('.load').slideUp(700).fadeOut(700);
+    
 };
 
 
