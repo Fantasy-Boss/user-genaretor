@@ -271,5 +271,12 @@ span {
     .edit div {
         font-size: 250%;
     }
+    h6 {
+    font-size: larger;
+    }
+
+    h5 {
+        font-size: larger;
+    }
 }
 
