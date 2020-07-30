@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="text/svg" href="fav.svg"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="load"><div></div></div>
+            <img class="img" src="" >
+            <div class="box">
+            <div class="filter">
+                <h5>Gender</h5>
+                <form class='inline'>
+                    <input type='radio' name="gender" value='' id='random' checked>
+                    <label for='random'>Random </label><br>
+                    <input type='radio' name="gender" value='male' id='male'>
+                    <label for='male'>Male </label><br>
+                    <input type='radio' name="gender" value='female' id='female'>
+                    <label for='female'>Female</label>
+                </form>
+            <div>
+                <h5>Nationality</h5>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">United States</button>
+                </div>
+                <div id='li'>
+                    <li value="us">United States</li>
+                    <li value="gb">United Kingdom</li>
+                    <li value="nz">New Zealand</li>
+                    <li value="au">Australia</li>
+                    <li value="br">Brazil</li>
+                    <li value="ca">Canada</li>
+                    <li value="de">Germany</li>
+                    <li value="dk">Denmark</li>
+                    <li value="es">Spain</li>
+                    <li value="fi">Finland</li>
+                    <li value="fr">France</li>
+                    <li value="ie">Ireland</li>
+                    <li value="ir">Iran</li>
+                    <li value="tr">Turkey</li>
+                    <li value="no">Norway</li>
+                    <li value="nl">Netherlands</li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="btns">
+            <button class="btn btn-my" id="filter">Filter</button>
+            <button class="btn btn-my" id="gen">Generate</button>
+        </div>
+
+        <div class='card'>
+            <h5>Basic</h5>
+            <h6>Name:<hr><span id="name"></span></h6>
+            <h6>Gender:<hr><span id="gender"></span></h6>
+            <h6>Age:<hr><span id="age"></span></h6>
+            <h6>Birthday:<hr><span id="dob"></span></h6>
+        </div>
+
+        <div class='card'>
+            <h5>Contact</h5>
+            <h6>Email:<hr><span id="email"></span></h6>
+            <h6>Phone:<hr><span id="phone"></span></h6>
+        </div>
+
+        <div class='card'>
+            <h5>Location</h5>
+            <h6>Street:<hr><span id="street"></span></h6>
+            <h6>Postcode:<hr><span id="postcode"></span></h6>
+            <h6>City:<hr><span id="city"></span></h6>
+            <h6>State:<hr><span id="state"></span></h6>
+            <h6>Country:<hr><span id="country"></span></h6>
+        </div>
+        
+        <div class='card'>
+            <h5>Geo Location</h5>
+            <h6>Latitude:<hr><span id="latitude"></span></h6>
+            <h6>Longitude:<hr><span id="longitude"></span></h6></div>
+        </div>
+    </div>
+
+    <div class="edit">
+        <img title="Edit" src="edit.svg">
+        <div title="Cancel">+</div>
+    </div>
+    <br><br>
+    <script src='jquery-3.5.1.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>

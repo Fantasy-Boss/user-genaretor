@@ -1,0 +1,275 @@
+
+body {
+    position:relative;
+    background-color: #222;
+    font-family: "Poppins", sans-serif;
+    margin: 10px;
+    color:white;
+    }
+    
+::selection {
+    color: red;
+    background: #51ff2e;
+}
+
+::-moz-selection {
+    color: red;
+    background: #51ff2e;
+}
+
+::-webkit-selection {
+    color: red;
+    background: #51ff2e;
+}
+
+.edit {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #12c2fc;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 6px gray;
+}
+
+.edit img {
+    width: 25px;
+    height: 25px;
+}
+
+.edit div {
+    display: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    transform: rotate(45deg)
+}
+
+.container {
+    background-color: white;
+    border-radius:20px;
+    padding:10px;
+    text-align:center;
+}
+
+.img {
+    height: 190px;
+    width: 190px;
+    border-radius:50%;
+    outline:none;
+    display:none;
+    padding: 17px;
+    margin: 20px 0px;
+    background:linear-gradient(10deg, #dc00fa, red);
+    }
+
+.card {
+    border-radius:20px;
+    background-color: #495c69;
+    padding: 5px;
+    margin: 8px 0;
+}
+
+.box {
+    display: none;
+}
+
+#gender {
+    text-transform: capitalize;
+}
+
+h6 {
+    margin: 5px 0;
+}
+
+h5 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.load {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.load div {
+    position:relative ;
+    width: 80px;
+    height: 80px;
+    border:7px solid;
+    border-radius: 50%;
+    border-left:7px solid #fc00f9;
+    border-bottom:7px solid #fc00f9;
+    animation:load 2s linear infinite ;
+    overflow:hidden;
+}
+
+@keyframes load {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+
+.btns {
+    display:flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.btn-my {
+    color: white;
+    width: 40%;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px gray;
+    background:linear-gradient(0deg, #ff0000, #fa8932);
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: 1px 1px 10px gray inset;
+    background:linear-gradient(0deg, #fa8932, #ff0000);
+}
+
+.inline, h6, h6 hr {
+    display: inline;
+}
+
+h6 hr {
+    width: 0px;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+}
+
+input[type='radio']:checked {
+    color: red;
+    cursor: pointer;
+}
+
+
+input[type='radio']:after { 
+    width: 15px; 
+    height: 15px; 
+    border-radius: 15px; 
+    top: -2px; 
+    left: -1px; 
+    position: relative; 
+    background-color: #d1d3d1; 
+    content: ''; display: 
+    inline-block; 
+    visibility: visible; 
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after { 
+    width: 15px; 
+    height: 15px;
+    border-radius: 15px; 
+    top: -2px; 
+    left: -1px; 
+    position: relative; 
+    background-color: #51ff2e; 
+    content: ''; 
+    display: inline-block; 
+    visibility: visible;
+    border: 2px solid white;
+    transition: background-color 0.7s;
+}
+
+
+label {
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+select {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 5px 0px;
+    border-radius: 15px;
+}
+
+li {
+    list-style:none;
+    text-align: center;
+    padding: 3px 0;
+}
+
+#li {
+    display: none;
+    align-items: center;
+    text-align: center;
+    border: 1px dashed gray;
+    border-radius: 20px;
+}
+
+li:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.dropdown button {
+    width: 70%;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+form br {
+    display: none;
+}
+
+@media (max-width:350px) {
+    form br {
+        display: flex;
+    }
+}
+
+span {
+    outline: normal;
+    outline-color: white;
+    padding: 2px 6px;
+}
+
+.filter {
+    display: none;
+    border-radius: 25px;
+    background-color: #495c69;
+    padding: 10px;
+}
+
+
+@media (min-width:780px) {
+    .container {
+        width: 770px;
+    }
+    .img {
+        height: 200px;
+        width: 200px;
+    }
+    label {
+        padding-right: 25px;
+    }
+    .edit {
+        width: 65px;
+        height: 65px;
+        bottom: 35px;
+        right: 35px;
+    }
+    .edit div {
+        font-size: 250%;
+    }
+}
+
